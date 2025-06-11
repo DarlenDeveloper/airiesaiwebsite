@@ -1,0 +1,139 @@
+Terms of Service for Airies AI
+Last Updated: 21|04|2025
+Welcome to Airies AI. These Terms of Service (“ToS” or “Terms”) govern your access to and use of the Airies AI platform, including all related services, features, content, and tools (collectively, the “Platform”). By accessing or using the Platform, you agree to be bound by these Terms in their entirety. If you do not agree to these Terms, you are not permitted to use the Platform under any circumstances.
+
+1. Acceptance of Terms
+These Terms form a legally binding agreement between you (“User,” “you,” or “your”) and Airies AI (“we,” “us,” or “our”). By registering for an account, accessing, or otherwise interacting with the Platform, you confirm that you have read, understood, and agree to comply with these Terms and our accompanying Privacy Policy. If you are using the Platform on behalf of a business, organization, or other legal entity, you represent and warrant that you have the full authority to bind that entity to these Terms, and “you” will refer to both you and that entity collectively.
+We reserve the right to update or modify these Terms at our discretion. Should we make material changes, we will notify you through reasonable means, such as via email to the address associated with your account or by displaying a prominent notice on the Platform. Such notifications will be provided at least 30 days prior to the changes taking effect, unless immediate changes are required by law. Your continued use of the Platform following the effective date of any updates constitutes your acceptance of the revised Terms. We encourage you to review these Terms periodically to stay informed of any modifications. If you disagree with the updated Terms, your sole remedy is to discontinue using the Platform and terminate your account prior to the effective date of the changes.
+
+2. Scope of Services
+Airies AI provides a business-to-business (B2B) platform designed to empower businesses with AI-powered customer care agents. The Platform encompasses a variety of features and services, including but not limited to:
+
+AI Agent Creation and Customization: Tools to design and tailor AI agents to meet specific business needs.
+Training Tools: Resources for training AI models with custom datasets or predefined parameters.
+Telephony Integrations: Connectivity with services like Twilio and Africa's Talking for seamless communication.
+Real-Time Analytics: Dashboards providing insights into agent performance, customer interactions, and system usage.
+Data Management: Secure storage, retrieval, and processing of business and user data.
+Customer Support: Access to documentation, tutorials, and a support team for assistance.
+
+The Platform is dynamic and may evolve over time. We may, at our sole discretion and without prior notice, modify, enhance, suspend, or discontinue any aspect of the Platform. This includes adding new functionalities, removing outdated features, adjusting the user interface, or updating underlying technologies. While we strive to maintain continuity, we will endeavor to notify users of significant changes that may materially impact their ability to use the Platform, such as the discontinuation of a core feature. Such notifications may be delivered via email, in-app messages, or other reasonable methods.
+
+3. User Accounts and Responsibilities
+3.1 Account Registration
+To access certain features of the Platform, you must register for an account. During registration, you agree to:
+
+Provide accurate, current, and complete information, including your name, email address, and business details.
+Promptly update your account information if any changes occur, such as a new email address or contact number.
+Safeguard your login credentials, including your username and password, and refrain from sharing them with third parties.
+Immediately notify us at Contact us via our scheduling page: https://calendly.com/hello-darlendev/30min if you suspect unauthorized access to your account or any other security breach.
+
+You are wholly responsible for all activities conducted under your account, whether authorized by you or not. To enhance security, we strongly recommend using a unique password that is not used on other platforms and enabling two-factor authentication (2FA) if available.
+3.2 Account Security
+To ensure the integrity of your account, you agree to adhere to the following security practices:
+
+Create a strong password incorporating a mix of uppercase and lowercase letters, numbers, and special characters (e.g., !, @, #).
+Update your password periodically, at least every six months, or sooner if a breach is suspected.
+Enable 2FA if provided, adding an additional layer of protection through a secondary verification method (e.g., a code sent to your phone).
+Log out of your account after each session, particularly when using shared, public, or unsecured devices.
+
+If you forget your password, you may initiate a reset by selecting the “Forgot Password” option on the login page. A reset link will be sent to the email address tied to your account. Follow the instructions in the email to create a new password. If you encounter issues, contact our support team for assistance.
+3.3 Acceptable Use
+You agree to use the Platform solely for lawful purposes and in accordance with these Terms. Prohibited activities include, but are not limited to:
+
+Engaging in illegal, fraudulent, or harmful conduct, such as harassment, discrimination, or distributing malicious content.
+Attempting to gain unauthorized access to the Platform, other user accounts, servers, or connected systems.
+Uploading or transmitting content that is defamatory, obscene, pornographic, or violates third-party rights, including intellectual property or privacy rights.
+Disrupting the Platform's functionality by introducing viruses, malware, or other harmful code.
+Sending spam, unsolicited messages, or bulk communications without prior consent.
+Impersonating another individual or entity, or misrepresenting your affiliation with any party.
+Overloading, damaging, or impairing the Platform's infrastructure or performance.
+
+Violations of these policies may result in immediate suspension or termination of your account, at our discretion. We may also report illegal activities to relevant law enforcement authorities and cooperate fully with any investigations.
+
+4. Intellectual Property
+4.1 Ownership
+Airies AI retains all rights, title, and interest in the Platform, including its software, algorithms, user interfaces, documentation, trademarks, logos, and other proprietary materials. Your use of the Platform does not grant you any ownership rights or licenses beyond those expressly provided in these Terms. All trademarks, service marks, and logos appearing on the Platform are the exclusive property of Airies AI or their respective third-party owners, and you may not use them without prior written permission.
+4.2 User Data
+You retain ownership of all data, content, or materials you upload or submit to the Platform (“User Data”). By providing User Data, you grant Airies AI a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, store, process, reproduce, modify, and display such data solely for the purposes of operating, maintaining, and enhancing the Platform. This license extends to creating derivative works, such as aggregated or anonymized datasets for analytics, reporting, or machine learning improvements, provided such works do not identify you or your business without consent.
+You warrant that you have all necessary rights, permissions, and consents to upload User Data and grant the above license. Airies AI is not responsible for the content of User Data or any disputes arising from its use.
+4.3 Feedback
+If you submit feedback, suggestions, or ideas about the Platform (“Feedback"), you grant Airies AI a perpetual, irrevocable, royalty-free, worldwide license to use, adapt, and incorporate such Feedback into the Platform or related services without any obligation to compensate or credit you. This includes the right to modify, publish, or commercialize Feedback for purposes such as feature development, marketing, or customer support enhancements.
+
+5. Privacy
+Your privacy is a priority for us. Our Privacy Policy provides a comprehensive explanation of how we collect, use, store, disclose, and protect your personal information and User Data. By using the Platform, you consent to these practices as outlined in the Privacy Policy.
+We adhere to applicable privacy laws, including the General Data Protection Regulation (GDPR) for users in the European Union and the California Consumer Privacy Act (CCPA) for California residents. Depending on your location, you may have rights such as accessing, correcting, or deleting your data. Please refer to the Privacy Policy for details on exercising these rights and our compliance with regional regulations.
+We implement reasonable technical and organizational measures to safeguard your data, including encryption, access controls, and regular security audits. However, no system is entirely immune to breaches, and we cannot guarantee absolute security.
+
+6. Subscription and Payment
+6.1 Subscription Plans
+Certain features of the Platform require a paid subscription. Available plans and pricing are outlined on our Pricing Page and may include:
+
+Starter Plan: Basic AI tools with limited monthly usage and support.
+Professional Plan: Expanded features, higher usage limits, and priority support.
+Enterprise Plan: Fully customized solutions, unlimited usage, and dedicated account management.
+
+We may adjust subscription offerings, pricing, or features at any time. Changes will not affect your current subscription term but will apply upon renewal or if you switch plans.
+6.2 Payment Terms
+You agree to pay all applicable fees for your selected subscription plan in advance. Payments are non-refundable unless otherwise stated in these Terms or mandated by law. We accept multiple payment methods, including credit/debit cards, wire transfers, and electronic payment services (e.g., PayPal, Stripe), as specified during checkout.
+If a payment fails (e.g., due to insufficient funds or an expired card), we may suspend your access until payment is successfully processed. You are liable for any additional fees incurred due to payment failures, such as bank charges or penalties.
+6.3 Billing and Renewals
+Subscriptions are billed on a recurring basis—either monthly or annually—based on your chosen plan. Your subscription will automatically renew at the end of each billing cycle unless canceled at least 48 hours prior to the renewal date. You can manage billing preferences and cancellations via your account dashboard or by contacting our support team.
+Upon cancellation, you retain access to paid features until the end of your current billing period. No prorated refunds are issued for unused portions of a billing cycle.
+6.4 Refunds
+Refunds are not typically offered, except where required by applicable law or at our sole discretion (e.g., for significant service disruptions). To request a refund, contact our support team with your account details and a description of the issue.
+
+7. Limitation of Liability
+To the fullest extent permitted by law, Airies AI, its affiliates, officers, directors, employees, agents, and licensors shall not be liable for any indirect, incidental, special, consequential, or punitive damages—including loss of profits, revenue, data, goodwill, or business opportunities—arising from your use of or inability to use the Platform, even if we were advised of the possibility of such damages.
+Our aggregate liability for any claim related to these Terms or the Platform shall not exceed the total amount you paid to us in the twelve (12) months prior to the claim. This limitation applies regardless of the legal theory (e.g., contract, tort, or statute) and does not waive any non-excludable statutory rights you may have under applicable law.
+
+8. Disclaimer of Warranties
+The Platform is provided "as is" and "as available," without warranties of any kind, whether express, implied, or statutory. We do not guarantee that the Platform will:
+
+Operate uninterrupted or error-free.
+Be secure or free from viruses, malware, or other harmful components.
+Meet your specific needs or expectations.
+
+We disclaim all implied warranties, including merchantability, fitness for a particular purpose, non-infringement, accuracy, completeness, or timeliness of information. Your use of the Platform is at your own risk, and we are not liable for any damages resulting from reliance on the Platform's content or services.
+
+9. Termination
+9.1 Termination by User
+You may terminate your account at any time by navigating to the account settings page and selecting the termination option or by emailing our support team at Contact us via our scheduling page: https://calendly.com/hello-darlendev/30min. Termination ends your access to the Platform, and we recommend exporting any critical data beforehand.
+9.2 Termination by Airies AI
+We may suspend or terminate your account and access to the Platform without prior notice if you:
+
+Breach these Terms or our acceptable use policies.
+Fail to pay subscription fees after a reasonable grace period.
+Engage in conduct that harms the Platform, other users, or our reputation.
+Are subject to legal or regulatory actions requiring termination.
+
+Termination for cause voids any eligibility for refunds or compensation.
+9.3 Effect of Termination
+Upon termination, all rights and licenses granted to you under these Terms cease immediately, and you must stop using the Platform. We may retain your User Data post-termination for legal compliance, dispute resolution, or contractual enforcement purposes. You may request data deletion, subject to applicable laws, by contacting us within 30 days of termination.
+
+10. Dispute Resolution
+10.1 Governing Law
+These Terms are governed by the laws of [Insert Jurisdiction], excluding its conflict of law provisions. Any legal actions not subject to arbitration will be resolved in the courts of [Insert Location].
+10.2 Arbitration
+Disputes arising from these Terms or the Platform shall be resolved through binding arbitration under the rules of [Insert Arbitration Body]. Arbitration will occur in [Insert Location], conducted by a single arbitrator in English. The arbitrator's decision is final and enforceable in any court of competent jurisdiction. Each party bears its own costs unless the arbitrator awards otherwise.
+10.3 Class Action Waiver
+You agree to resolve disputes on an individual basis only, waiving any right to participate in class, collective, or representative actions against Airies AI.
+
+11. Modifications to the Terms
+We may amend these Terms at our discretion. Material changes will be communicated via email or an in-platform notice at least 30 days before taking effect, unless immediate implementation is legally required. Continued use post-modification signifies acceptance. To reject changes, terminate your account before the effective date.
+
+12. Force Majeure
+We are not liable for delays or failures in performing our obligations due to events beyond our reasonable control, such as natural disasters, wars, terrorist acts, government mandates, labor strikes, or disruptions in internet or utility services. We will resume performance as soon as practicable following such events.
+
+13. Miscellaneous
+13.1 Entire Agreement
+These Terms, alongside the Privacy Policy and any referenced agreements, constitute the complete understanding between you and Airies AI regarding the Platform, superseding all prior agreements.
+13.2 Severability
+If any provision of these Terms is deemed invalid or unenforceable, the remaining provisions remain in full effect, and the invalid provision will be reformed to reflect the original intent as closely as legally possible.
+13.3 Waiver
+Our failure to enforce any provision does not waive it. Waivers must be explicit, written, and signed by an authorized Airies AI representative.
+13.4 Assignment
+You may not assign your rights or obligations under these Terms without our prior written consent. We may assign these Terms freely, including in cases of mergers, acquisitions, or asset sales.
+13.5 Contact Information
+For questions or concerns about these Terms, reach out to:Airies AI NationaL Innovation Hub Nakawa Kampala, Uganda. Contact us via our scheduling page: https://calendly.com/hello-darlendev/30min +256778825312
+
+By accessing or using the Airies AI Platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service in their entirety.
