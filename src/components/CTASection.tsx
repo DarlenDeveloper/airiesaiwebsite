@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FiArrowRight, FiCheck, FiSend, FiClock, FiDollarSign, FiMessageCircle } from 'react-icons/fi';
-import { useCalendly } from '../hooks/useCalendly';
 
 const CTASection = () => {
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isError, setIsError] = useState(false);
-  const { openCalendly } = useCalendly();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,7 +15,7 @@ const CTASection = () => {
       return;
     }
     setIsSubmitted(true);
-    openCalendly();
+    window.open('https://calendly.com/hello-darlendev/30min', '_blank');
   };
 
   // Animation variants
@@ -191,12 +189,14 @@ const CTASection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link
-                to="https://calendly.com/hello-darlendev/30min"
+              <a
+                href="https://calendly.com/hello-darlendev/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-transparent border-2 border-white text-white hover:bg-white/10 py-4 px-8 rounded-lg font-semibold text-lg transition-colors inline-block"
               >
                 Request a Demo
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
           

@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiTrendingUp, FiCheckCircle, FiAward, FiTarget, FiUsers, FiClock, FiDollarSign } from 'react-icons/fi';
-import { useCalendly } from '../hooks/useCalendly';
 
 const BusinessImpactSection = () => {
-  const { openCalendly } = useCalendly();
 
   // Key business outcomes that don't reveal implementation details
   const businessOutcomes = [
@@ -173,14 +171,16 @@ const BusinessImpactSection = () => {
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
             Ready to achieve similar results for your business?
           </h3>
-          <motion.button 
+          <motion.a 
+            href="https://calendly.com/hello-darlendev/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-gradient-to-r from-primary to-purple-600 text-white font-bold rounded-full text-lg shadow-lg"
             whileHover={{ scale: 1.05, boxShadow: "0 15px 30px rgba(0, 0, 0, 0.2)" }}
             whileTap={{ scale: 0.98 }}
-            onClick={openCalendly}
           >
             Schedule Your Free Consultation
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

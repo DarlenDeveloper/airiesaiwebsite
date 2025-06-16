@@ -217,11 +217,19 @@ const About = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="https://calendly.com/hello-darlendev/30min"
-                className="bg-white text-primary hover:bg-white/90 py-3 px-8 rounded-lg font-semibold text-lg transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-white text-primary px-8 py-3 rounded-md font-semibold text-lg shadow-lg hover:bg-gray-100 transition duration-300"
               >
-                Contact Us Today
+                Schedule a Demo
+              </a>
+              <a 
+                href="https://calendly.com/hello-darlendev/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white border border-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-white hover:text-primary transition duration-300"
+              >
+                Contact Sales
               </a>
             </div>
           </motion.div>

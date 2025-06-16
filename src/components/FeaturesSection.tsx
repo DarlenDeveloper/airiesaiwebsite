@@ -182,14 +182,16 @@ const FeaturesSection = () => {
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
             Join the forward-thinking companies that are achieving extraordinary results with AIRIES AI.
           </p>
-          <motion.button 
+          <motion.a 
+            href="https://calendly.com/hello-darlendev/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-gradient-to-r from-primary to-purple-600 text-white font-bold rounded-full text-lg shadow-lg"
             whileHover={{ scale: 1.05, boxShadow: "0 15px 30px rgba(0, 0, 0, 0.4)" }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => window.open('https://calendly.com/hello-darlendev/30min', '_blank')}
           >
             Schedule a Demo
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

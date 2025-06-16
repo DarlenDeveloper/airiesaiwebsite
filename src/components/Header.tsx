@@ -2,14 +2,12 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { motion } from 'framer-motion';
-import { useCalendly } from '../hooks/useCalendly';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
   const location = useLocation();
-  const { openCalendly } = useCalendly();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -113,10 +111,12 @@ const Header = () => {
           </motion.nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <motion.button
+            <motion.a
+              href="https://calendly.com/hello-darlendev/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={openCalendly}
               className="relative bg-gradient-to-r from-primary to-purple-600 text-white font-medium px-6 py-2 rounded-full transition-all shadow-md hover:shadow-lg border border-primary/20 overflow-hidden group"
             >
               <span className="relative z-10 flex items-center">
@@ -126,12 +126,14 @@ const Header = () => {
                 Schedule Meeting
               </span>
               <div className="absolute inset-0 bg-white/10 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></div>
-            </motion.button>
+            </motion.a>
             
-            <motion.button
+            <motion.a
+              href="https://calendly.com/hello-darlendev/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={openCalendly}
               className="relative bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg overflow-hidden group"
             >
               <span className="relative z-10 flex items-center">
@@ -149,7 +151,7 @@ const Header = () => {
                 </motion.svg>
               </span>
               <div className="absolute inset-0 bg-black/10 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></div>
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -183,12 +185,11 @@ const Header = () => {
               <MobileNavLink label="FAQ" onClick={() => { scrollToSection('faq'); setIsMenuOpen(false); }} isActive={activeSection === 'faq'} />
               <MobileNavLink label="Pricing" onClick={() => { scrollToSection('pricing'); setIsMenuOpen(false); }} isActive={activeSection === 'pricing'} />
               <div className="border-t border-gray-200 my-2 pt-2"></div>
-              <motion.button 
+              <motion.a 
+                href="https://calendly.com/hello-darlendev/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-white text-primary font-medium py-3 px-4 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors text-center flex items-center justify-center space-x-2 relative overflow-hidden group"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  openCalendly();
-                }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -199,25 +200,32 @@ const Header = () => {
                   Schedule Meeting
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-purple-500/10 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></div>
-              </motion.button>
+              </motion.a>
               
-              <motion.button 
+              <motion.a 
+                href="https://calendly.com/hello-darlendev/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-gradient-to-r from-primary to-purple-600 text-white py-3 px-4 rounded-lg font-medium transition-colors text-center flex items-center justify-center space-x-2 relative overflow-hidden group"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  openCalendly();
-                }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <span className="relative z-10 flex items-center">
                   Get Started
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
+                  <motion.svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-4 w-4 ml-2" 
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                    initial={{ x: 0 }}
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                  >
+                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </motion.svg>
                 </span>
                 <div className="absolute inset-0 bg-black/10 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></div>
-              </motion.button>
+              </motion.a>
             </nav>
           </motion.div>
         )}

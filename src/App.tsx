@@ -19,6 +19,7 @@ import About from './pages/About'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import CaseStudies from './pages/CaseStudies'
+import FloatingCtaButton from './components/FloatingCtaButton'
 import './App.css'
 
 // Animated particles component
@@ -250,6 +251,7 @@ function App() {
               } />
             </Routes>
           </AnimatePresence>
+          <FloatingCtaButton />
         </div>
       </div>
     </Router>

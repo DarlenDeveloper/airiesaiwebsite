@@ -2,13 +2,11 @@ import { FiCheck } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { useCalendly } from '../hooks/useCalendly';
 
 const PricingSection = () => {
   const [billingType, setBillingType] = useState<'monthly' | 'annual'>('monthly');
   const [userCountryCode, setUserCountryCode] = useState<string | null>(null);
   const [userCurrency, setUserCurrency] = useState<string>('UGX');
-  const { openCalendly } = useCalendly();
 
   useEffect(() => {
     // Fetch user's country based on IP
@@ -253,18 +251,18 @@ const PricingSection = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <button
+            <motion.button
               className={`py-2 px-6 rounded-full transition-all ${billingType === 'monthly' ? 'bg-white shadow-md font-medium text-primary' : 'text-gray-600'}`}
               onClick={() => setBillingType('monthly')}
             >
               Monthly
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               className={`py-2 px-6 rounded-full transition-all ${billingType === 'annual' ? 'bg-white shadow-md font-medium text-primary' : 'text-gray-600'}`}
               onClick={() => setBillingType('annual')}
             >
               Annual
-            </button>
+            </motion.button>
           </motion.div>
         </motion.div>
 
@@ -381,8 +379,10 @@ const PricingSection = () => {
                   transition={{ type: 'spring', stiffness: 400, damping: 17 }}
                 >
                   {plan.id === 'enterprise' ? (
-                    <button
-                      onClick={openCalendly}
+                    <a
+                      href={plan.buttonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`block w-full py-2 px-4 text-center rounded-lg text-sm font-medium transition ${
                         plan.isHighlighted
                           ? 'bg-primary text-white hover:bg-primary/90'
@@ -390,10 +390,12 @@ const PricingSection = () => {
                       }`}
                     >
                       {plan.buttonText}
-                    </button>
+                    </a>
                   ) : (
-                    <button
-                      onClick={openCalendly}
+                    <a
+                      href={plan.buttonLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`block w-full py-2 px-4 text-center rounded-lg text-sm font-medium transition ${
                         plan.isHighlighted
                           ? 'bg-primary text-white hover:bg-primary/90'
@@ -401,7 +403,7 @@ const PricingSection = () => {
                       }`}
                     >
                       {plan.buttonText}
-                    </button>
+                    </a>
                   )}
                 </motion.div>
               </div>

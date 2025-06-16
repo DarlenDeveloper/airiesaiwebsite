@@ -1,23 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi';
-import { CalendlyButton } from '../components/CalendlyButton';
-import { useCalendly } from '../hooks/useCalendly';
-
-// Add Calendly type declarations
-declare global {
-  interface Window {
-    Calendly?: {
-      initBadgeWidget: (options: {
-        url: string;
-        text: string;
-        color: string;
-        textColor: string;
-      }) => void;
-      showPopupWidget: (url: string) => void;
-    };
-  }
-}
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,8 +9,6 @@ const Contact = () => {
     subject: '',
     message: '',
   });
-
-  const { openCalendly } = useCalendly();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -39,7 +20,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    openCalendly();
+    window.open('https://calendly.com/hello-darlendev/30min', '_blank');
   };
 
   return (
@@ -194,10 +175,13 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   
-                  <CalendlyButton>
+                  <button
+                    type="submit"
+                    className="inline-flex items-center px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors"
+                  >
                     <FiSend className="mr-2" />
                     Schedule a Meeting
-                  </CalendlyButton>
+                  </button>
                 </form>
               </div>
               
@@ -213,14 +197,12 @@ const Contact = () => {
                   If you're an existing customer and need technical support, please email us directly with your company details and we'll respond promptly.
                 </p>
                 <a 
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    openCalendly();
-                  }}
-                  className="text-green-800 font-medium hover:text-green-900 underline"
+                  href="https://calendly.com/hello-darlendev/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors"
                 >
-                  Contact Support
+                  Schedule Support Call
                 </a>
               </motion.div>
             </motion.div>
