@@ -98,7 +98,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <motion.nav 
-            className="hidden md:flex items-center space-x-1 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full shadow-md border border-gray-100"
+            className="flex md:flex items-center space-x-1 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full shadow-md border border-gray-100"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

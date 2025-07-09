@@ -4,51 +4,50 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 const PricingSection = () => {
-  const [billingType, setBillingType] = useState<'monthly' | 'annual'>('monthly');
-  const [userCountryCode, setUserCountryCode] = useState<string | null>(null);
-  const [userCurrency, setUserCurrency] = useState<string>('UGX');
 
-  useEffect(() => {
-    // Fetch user's country based on IP
-    fetch('http://ip-api.com/json')
-      .then(response => response.json())
-      .then(data => {
-        if (data.status === 'success') {
-          setUserCountryCode(data.countryCode);
-          setUserCurrency(data.currency);
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching IP data:', error);
-        // Fallback to default if API call fails
-      });
-  }, []);
+
   
-  // Calculate annual prices (no discount)
-  const getAnnualPrice = (monthlyPrice: string) => {
-    if (monthlyPrice === 'Contact Sales') return 'Contact Sales';
-    
-    // Extract the numeric part of the price, assuming it's always a number
-    const numericValue = parseInt(monthlyPrice.replace(/[^0-9]/g, ''));
-    const annualValue = numericValue * 12;
-    
-    // Format with commas
-    const formattedPrice = annualValue.toString().replace(/\B(?=(\\d{3})+(?!\\d))/g, ",");
-    return `${userCurrency} ${formattedPrice}`;
-  };
+
   
   const pricingPlans = [
+    {
+      id: 'widget',
+      name: 'Web Widget',
+      description: 'An AI agent on your website to engage visitors 24/7.',
+      prices: {
+        UGX: '200,000',
+        USD: '50',
+        KES: '7,400',
+        RWF: '69,000',
+        TZS: '138,000',
+        GBP: '42',
+        ZAR: '990',
+      },
+      period: 'per month',
+      metrics: 'Unlimited Interactions',
+      features: [
+        '1 AI agent for your website',
+        'Lead capture & qualification',
+        '24/7 automated responses',
+        'Basic analytics dashboard',
+        'Easy setup (no code)',
+        'Email support',
+      ],
+      buttonText: 'Get Started',
+      buttonLink: 'https://orgdashboard.airiesai.com/signup',
+      isHighlighted: false,
+    },
     {
       id: 'starter',
       name: 'Starter',
       description: 'Perfect for small businesses getting started with AI support.',
       prices: {
         UGX: '497,000',
+        USD: '130',
         KES: '17,395',
         RWF: '164,010',
         TZS: '362,810',
         GBP: '109',
-        USD: '134',
         ZAR: '2,632',
       },
       period: 'per month',
@@ -57,7 +56,7 @@ const PricingSection = () => {
         '2 AI agents',
         '2 concurrent calls',
         '300 minutes included',
-        'Top-up available (60,000 UGX per 100 mins)',
+        'Top-up available ($16 / 100 mins)',
         'Email support',
         'Call recording',
         'Basic analytics',
@@ -75,11 +74,11 @@ const PricingSection = () => {
       description: 'Ideal for growing businesses with increasing support needs.',
       prices: {
         UGX: '897,000',
+        USD: '230',
         KES: '31,395',
         RWF: '295,910',
         TZS: '654,810',
         GBP: '197',
-        USD: '242',
         ZAR: '4,752',
       },
       period: 'per month',
@@ -88,7 +87,7 @@ const PricingSection = () => {
         '5 AI agents',
         '5 concurrent calls',
         '1000 minutes included',
-        'Top-up available (60,000 UGX per 100 mins)',
+        'Top-up available ($16 / 100 mins)',
         'Email support',
         'Call recording & transcription',
         'Detailed analytics',
@@ -109,12 +108,12 @@ const PricingSection = () => {
       description: 'For organizations requiring maximum capacity and features.',
       prices: {
         UGX: '1,500,000',
-        KES: '52,632', // Approximately 1,500,000 UGX / 28.5 UGX/KES
-        USD: '400', // Approximately 1,500,000 UGX / 3750 UGX/USD
-        RWF: '492,000', // Placeholder - needs actual value
-        TZS: '1,090,000', // Placeholder - needs actual value
-        GBP: '328', // Placeholder - needs actual value
-        ZAR: '8,000', // Placeholder - needs actual value
+        USD: '390',
+        KES: '52,632',
+        RWF: '492,000',
+        TZS: '1,090,000',
+        GBP: '328',
+        ZAR: '8,000',
       },
       period: 'per month',
       metrics: '2000 minutes / month',
@@ -122,7 +121,7 @@ const PricingSection = () => {
         '10 AI agents',
         '10 concurrent calls',
         '2000 minutes included',
-        'Top-up available (60,000 UGX per 100 mins)',
+        'Top-up available ($16 / 100 mins)',
         'Email & phone support',
         'Call recording & advanced transcription',
         'Advanced analytics & reporting',
@@ -142,14 +141,14 @@ const PricingSection = () => {
       id: 'enterprise',
       name: 'Enterprise',
       description: 'For large organizations requiring unlimited capacity and custom solutions.',
-      price: 'Customized', // Enterprise price is not converted
+      price: 'Customized',
       period: '',
       metrics: 'Unlimited minutes',
       features: [
         'Unlimited AI agents',
         'Unlimited concurrent calls',
         'Unlimited minutes',
-        'Custom pricing for top-ups',
+        'Custom minute bundles (e.g., $13 per 100 mins)',
         '24/7 dedicated support',
         'Advanced call recording & transcription',
         'Enterprise-grade analytics & reporting',
@@ -196,30 +195,8 @@ const PricingSection = () => {
     if (plan.id === 'enterprise') {
       return plan.price; // "Customized"
     }
-
-    const priceValue = (currency: string) => {
-      const price = plan.prices[currency];
-      return price ? `${currency} ${price}` : null;
-    };
-
-    switch (userCountryCode) {
-      case 'KE':
-        return priceValue('KES');
-      case 'RW':
-        return priceValue('RWF');
-      case 'TZ':
-        return priceValue('TZS');
-      case 'GB':
-        return priceValue('GBP');
-      case 'US':
-        return priceValue('USD');
-      case 'ZA':
-        return priceValue('ZAR');
-      case 'UG':
-        return priceValue('UGX');
-      default:
-        return priceValue('USD'); // Default to USD
-    }
+    const price = plan.prices['USD'];
+    return price ? `$${price}` : null;
   };
 
   return (
@@ -243,27 +220,7 @@ const PricingSection = () => {
             Choose the perfect plan for your business needs. All plans include our core AI technology with no hidden fees.
           </p>
           
-          {/* Billing Toggle */}
-          <motion.div 
-            className="mt-8 inline-flex items-center p-1 bg-gray-100 rounded-full"
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-          >
-            <motion.button
-              className={`py-2 px-6 rounded-full transition-all ${billingType === 'monthly' ? 'bg-white shadow-md font-medium text-primary' : 'text-gray-600'}`}
-              onClick={() => setBillingType('monthly')}
-            >
-              Monthly
-            </motion.button>
-            <motion.button
-              className={`py-2 px-6 rounded-full transition-all ${billingType === 'annual' ? 'bg-white shadow-md font-medium text-primary' : 'text-gray-600'}`}
-              onClick={() => setBillingType('annual')}
-            >
-              Annual
-            </motion.button>
-          </motion.div>
+
         </motion.div>
 
         <motion.div 

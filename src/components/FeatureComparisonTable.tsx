@@ -184,16 +184,16 @@ const FeatureComparisonTable = () => {
                 <tr className="bg-gradient-to-r from-gray-100 to-gray-50 text-gray-800">
                   <th className="py-4 px-6 text-left font-semibold w-1/4">Feature</th>
                   <th className="py-4 px-6 text-center font-semibold w-1/4">
-                    <div className="text-lg">Starter</div>
-                    <div className="text-sm font-normal text-gray-500">UGX 497,000/mo</div>
+                    <h4 className="font-bold text-lg text-gray-800">Starter</h4>
+                    <p className="text-sm text-gray-600">$130/mo</p>
                   </th>
                   <th className="py-4 px-6 text-center font-semibold w-1/4 bg-primary/5 border-b-2 border-primary">
-                    <div className="text-lg text-primary">Popular</div>
-                    <div className="text-sm font-normal text-gray-500">UGX 897,000/mo</div>
+                    <h4 className="font-bold text-lg text-primary">Popular</h4>
+                    <p className="text-sm text-gray-600">$230/mo</p>
                   </th>
                   <th className="py-4 px-6 text-center font-semibold w-1/4">
-                    <div className="text-lg">Business</div>
-                    <div className="text-sm font-normal text-gray-500">UGX 1,500,000/mo</div>
+                    <h4 className="font-bold text-lg text-gray-800">Business</h4>
+                    <p className="text-sm text-gray-600">$390/mo</p>
                   </th>
                   <th className="py-4 px-6 text-center font-semibold w-1/4">
                     <div className="text-lg">Enterprise</div>

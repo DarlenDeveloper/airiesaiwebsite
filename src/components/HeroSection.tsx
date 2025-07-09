@@ -1,22 +1,11 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import heroBg from '../assets/images/hero-bg.jpg';
 import aiAgent from '../assets/images/ai-agent.jpg';
 
 const HeroSection = () => {
-  const [scrollY, setScrollY] = useState(0);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], [0, 300]);
 
   // Animation variants
   const textVariants = {
@@ -48,7 +37,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{
           backgroundImage: `url(${heroBg})`,
-          transform: `translateY(${scrollY * 0.3}px)`
+          y
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 to-gray-900/80 backdrop-blur-sm"></div>
@@ -145,6 +134,7 @@ const HeroSection = () => {
                   src={aiAgent} 
                   alt="AI Customer Service Agent" 
                   className="w-full h-auto"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent mix-blend-overlay"></div>
               </div>
