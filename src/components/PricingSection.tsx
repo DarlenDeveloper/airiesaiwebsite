@@ -24,7 +24,7 @@ const PricingSection = () => {
         ZAR: '990',
       },
       period: 'per month',
-      metrics: 'Unlimited Interactions',
+      metrics: '300 minutes',
       features: [
         '1 AI agent for your website',
         'Lead capture & qualification',
