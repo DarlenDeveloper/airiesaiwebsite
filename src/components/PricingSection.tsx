@@ -15,8 +15,8 @@ const PricingSection = () => {
       name: 'Web Widget',
       description: 'An AI agent on your website to engage visitors 24/7.',
       prices: {
-        UGX: '200,000',
-        USD: '50',
+        UGX: '80,000',
+        USD: '20',
         KES: '7,400',
         RWF: '69,000',
         TZS: '138,000',
@@ -24,7 +24,7 @@ const PricingSection = () => {
         ZAR: '990',
       },
       period: 'per month',
-      metrics: '300 minutes',
+      metrics: '+ PREPAID PRICING PER USAGE',
       features: [
         '1 AI agent for your website',
         'Lead capture & qualification',
