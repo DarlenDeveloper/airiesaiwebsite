@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect, Suspense, lazy } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { createPortal } from 'react-dom'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import FeaturesSection from './components/FeaturesSection'
@@ -62,24 +61,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-function VapiWidgetPortal() {
-  // Ensure the script is loaded only once
-  useEffect(() => {
-    const scriptId = 'vapi-widget-script';
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script');
-      script.src = 'https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js';
-      script.async = true;
-      script.type = 'text/javascript';
-      script.id = scriptId;
-      document.body.appendChild(script);
-    }
-  }, []);
-  return createPortal(
-    <vapi-widget mode="voice" theme="dark" base-color="#0019ff" accent-color="#2b14b8" button-base-color="#000000" button-accent-color="#ffffff" radius="large" size="tiny" position="bottom-left" main-label="Powered By AIRIES AI" start-button-text="Start" end-button-text="End Call" require-consent="false" local-storage-key="vapi_widget_consent" show-transcript="true" public-key="88fae95e-5b60-494f-ad99-20160207563c" assistant-id="3f56a14c-65b8-4673-8c3e-fea5e32af384"></vapi-widget>,
-    document.body
-  );
-}
+
 
 function App() {
   // Page transition variants
@@ -275,7 +257,7 @@ function App() {
           {/* <FloatingCtaButton /> Removed as per user request */}
         </div>
       </div>
-      <VapiWidgetPortal />
+  {/* VapiWidgetPortal removed */}
     </Router>
   )
 }

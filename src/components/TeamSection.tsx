@@ -80,7 +80,7 @@ const TeamSection = () => {
   };
 
   return (
-    <section className="relative py-24 overflow-hidden" id="team">
+  <section className="relative py-24 overflow-hidden" id="team">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <div 
@@ -89,23 +89,7 @@ const TeamSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-gray-50 to-white" />
       </div>
-      
-      <div className="container-custom relative z-10">
-        {/* Section Header */}
-        <motion.div 
-          className="max-w-3xl mx-auto text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-        >
-          <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-3 block">Our Team</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Meet The Minds Behind AIRIES AI</h2>
-          <p className="text-gray-800 text-lg">
-            Our diverse team of AI researchers, engineers, and customer experience experts work together to create the most advanced customer service AI on the market.
-          </p>
-        </motion.div>
-
+      <div className="container-custom relative z-10 mt-0">
         {/* Team Members */}
         <motion.div 
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
